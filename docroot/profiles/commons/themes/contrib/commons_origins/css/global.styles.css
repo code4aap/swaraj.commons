@@ -448,6 +448,7 @@ var {
   margin: 0;
   font-family: 'Trebuchet MS';
   font-weight: 700;
+  font-size: 44px;
 }
 #site-name a:link, #site-name a:visited {
   text-decoration: none;
@@ -460,7 +461,10 @@ var {
  * Site slogan (h2)
  */
 #site-slogan {
-  margin: 0;
+  margin-top: 6px;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 0px;
 }
 
 /* =============================================================================
@@ -527,7 +531,7 @@ var {
   float: right;
   width: 90px;
   list-style: none;
-  margin: .5em -90px 0 0;
+  margin: 0.5em -90px 0 0;
   text-align: right;
 }
 .node-actions, .block-content .node-actions {
@@ -551,7 +555,7 @@ var {
   margin-bottom: 0;
 }
 .node-teaser.node-promoted {
-  background-image: url('../images/node-promoted-star.png?1363371593');
+  background-image: url('../images/node-promoted-star.png?1373639941');
   background-position: top right;
   background-repeat: no-repeat;
   background-color: #f7f7f7;
@@ -609,7 +613,7 @@ var {
   position: absolute;
   right: -5px;
   top: 10px;
-  background: url('../images/user_img_arrow.png?1363371593');
+  background: url('../images/user_img_arrow.png?1373639941');
 }
 .node .user-picture img, .comment .user-picture img, .node
 .views-field-picture img, .comment
@@ -709,7 +713,7 @@ var {
  * Generic styles for the more link
  */
 .more-link {
-  background-image: url('../images/icons/icon-more.png?1363371593');
+  background-image: url('../images/icons/icon-more.png?1373639941');
   background-repeat: no-repeat;
   min-height: 14px;
   padding: 0 0 0 1.7em;
@@ -792,13 +796,13 @@ ul.primary.tabs li.active a span {
 .quicktabs-style-commons-pills ul.quicktabs-tabs li.active a:after,
 ul.primary.tabs li.active a:after {
   position: absolute;
-  bottom: -.7em;
+  bottom: -0.7em;
   left: 50%;
   display: block;
   width: 0;
   height: 0;
   overflow: hidden;
-  margin-left: -.6em;
+  margin-left: -0.6em;
   content: "";
   border-width: .4em .6em;
   border-style: solid;
@@ -1263,7 +1267,7 @@ h1.node-title a:hover {
 .field-name-field-logo {
   float: left;
   width: 70px;
-  margin: .5em 0 0 -70px;
+  margin: 0.5em 0 0 -70px;
   position: relative;
   left: 70px;
 }
@@ -1443,7 +1447,7 @@ h1.node-title a:hover {
   width: 58px;
   height: 22px;
   display: inline-block;
-  background-image: url('../images/tag-featured.png?1363371593');
+  background-image: url('../images/tag-featured.png?1373639941');
   background-repeat: no-repeat;
   margin: 6px 0 0 5px;
 }
@@ -1452,7 +1456,7 @@ h1.node-title a:hover {
   width: 27px;
   height: 22px;
   display: inline-block;
-  background-image: url('../images/tag-new.png?1363371593');
+  background-image: url('../images/tag-new.png?1373639941');
   background-repeat: no-repeat;
   margin: 4px 0 0 5px;
 }
@@ -1609,7 +1613,7 @@ a:hover, a:focus {
   padding: 0;
 }
 #menu-bar.nav ul.menu li:hover, #menu-bar.nav ul.menu li.active-trail {
-  background: url('../images/main-nav-hover.png?1363371593') repeat-x left top;
+  background: url('../images/main-nav-hover.png?1373639941') repeat-x left top;
 }
 #menu-bar.nav ul.menu li:hover .arrow:before, #menu-bar.nav ul.menu li.active-trail .arrow:before {
   content: "";
@@ -1662,22 +1666,22 @@ a:hover, a:focus {
 }
 
 .main-menu-home a {
-  background: url('../images/icons/icon-home.png?1363371593') no-repeat center 10px;
+  background: url('../images/icons/icon-home.png?1373639941') no-repeat center 10px;
 }
 
 .main-menu-groups a {
-  background: url('../images/icons/icon-groups.png?1363371593') no-repeat center 10px;
+  background: url('../images/icons/icon-groups.png?1373639941') no-repeat center 10px;
 }
 
 .main-menu-events a {
-  background: url('../images/icons/icon-events.png?1363371593') no-repeat center 10px;
+  background: url('../images/icons/icon-events.png?1373639941') no-repeat center 10px;
 }
 
 #menu-bar.nav ul.menu li.main-menu-search {
   display: none;
 }
 #menu-bar.nav ul.menu li.main-menu-search a {
-  background: url('../images/icons/icon-search.png?1363371593') no-repeat center 10px;
+  background: url('../images/icons/icon-search.png?1373639941') no-repeat center 10px;
 }
 
 #block-commons-utility-links-utility-links {
@@ -2299,7 +2303,7 @@ body.page-node .pane-views-panes h2 {
   margin: 0 0 0 18px;
 }
 .view-id-commons_events_upcoming .views-field-title {
-  background-image: url('../images/icons/icon-gray-event.png?1363371593');
+  background-image: url('../images/icons/icon-gray-event.png?1373639941');
   background-repeat: no-repeat;
   background-position: left 4px;
   margin: 0;
@@ -2554,12 +2558,12 @@ body.page-node .pane-views-panes h2 {
   margin: 0 0 0 18px;
 }
 .view-id-commons_featured .type-Event {
-  background-image: url('../images/icons/icon-gray-event.png?1363371593');
+  background-image: url('../images/icons/icon-gray-event.png?1373639941');
   background-position: left 1px;
   padding: 0 0 0 18px;
 }
 .view-id-commons_featured .type-Post {
-  background-image: url('../images/icons/icon-gray-post.png?1363371593');
+  background-image: url('../images/icons/icon-gray-post.png?1373639941');
   background-position: left 1px;
   padding: 0 0 0 18px;
 }
@@ -2821,7 +2825,7 @@ body.page-node .pane-views-panes h2 {
   border: none !important;
   width: 12px !important;
   height: 12px !important;
-  background-image: url('../images/icons/ico_search_wht.png?1363371593') !important;
+  background-image: url('../images/icons/ico_search_wht.png?1373639941') !important;
   text-indent: -9999px !important;
   padding: 0 !important;
   margin: 10px 2px !important;
@@ -3396,13 +3400,13 @@ body.front.logged-in .view-commons-homepage-content .article.node.node-page .lin
  *  Placeholder styles
  */
 #menu-bar.nav .menu-item-193 a {
-  background-image: url('../images/icons/icon-home.png?1363371593');
+  background-image: url('../images/icons/icon-home.png?1373639941');
 }
 #menu-bar.nav .menu-item-194 a {
-  background-image: url('../images/icons/icon-groups.png?1363371593');
+  background-image: url('../images/icons/icon-groups.png?1373639941');
 }
 #menu-bar.nav .menu-item-195 a {
-  background-image: url('../images/icons/icon-events.png?1363371593');
+  background-image: url('../images/icons/icon-events.png?1373639941');
 }
 
 /**
