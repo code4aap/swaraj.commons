@@ -1,0 +1,14 @@
+name = Hybridauth Settings
+description = Store hybridauth settings
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = f_hybridauth_settings
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = hybridauth
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[user_permission][] = use hybridauth
+features_exclude[dependencies][hybridauth_settings] = hybridauth_settings
