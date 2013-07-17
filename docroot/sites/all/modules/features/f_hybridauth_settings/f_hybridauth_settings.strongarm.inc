@@ -27,6 +27,18 @@ function f_hybridauth_settings_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'hybridauth_forms';
+  $strongarm->value = array(
+    'user_login' => 'user_login',
+    'user_login_block' => 'user_login_block',
+    'user_register_form' => 'user_register_form',
+    'comment_form' => 0,
+  );
+  $export['hybridauth_forms'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'hybridauth_provider_Facebook_enabled';
   $strongarm->value = 1;
   $export['hybridauth_provider_Facebook_enabled'] = $strongarm;
