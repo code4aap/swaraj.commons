@@ -1,0 +1,4 @@
+name = HybridAuth Alter
+description = "Hide user registertation form"
+package = Swaraj Custom
+core = 7.x
