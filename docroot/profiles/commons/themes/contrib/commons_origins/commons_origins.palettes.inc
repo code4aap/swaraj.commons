@@ -17,6 +17,7 @@ function commons_origins_get_palettes() {
     'palette-black-blue-yellow' => 'Black blue yellow',
     'palette-black-white-red' => 'Black/white/red',
     'palette-brick-brick' => 'Brick',
+    'palette-green-orange' => 'Green/orange',
   );
 
   foreach ($palettes as $key => $name) {
