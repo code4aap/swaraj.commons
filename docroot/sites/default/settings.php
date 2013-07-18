@@ -9,7 +9,9 @@
  */
 $update_free_access = FALSE;
 $drupal_hash_salt = '';
-ini_set('arg_separator.output',     '&amp;');
+// ini_set('arg_separator.output',     '&amp;');
+// We are commenting the above line for hybridauth to work with Google
+// Refer this for details - https://drupal.org/node/1423216#comment-6960730
 ini_set('magic_quotes_runtime',     0);
 ini_set('magic_quotes_sybase',      0);
 ini_set('session.cache_expire',     200000);
