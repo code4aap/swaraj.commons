@@ -1870,7 +1870,7 @@ ul.action-links {
   margin-right: 4px;
 }
 
-.commons-login {
+.commons-login, .item-list-hybridauth-widget .ctools-modal-hybridauthmodal {
   box-shadow: 1px 1px 1px #C0C2BF inset, 0 3px 3px rgba(#000, 0.09);
   min-width: 83px;
   height: 34px;
@@ -1880,7 +1880,7 @@ ul.action-links {
   @include background-image(linear-gradient(top,  #919591 0%,#90948f 12%,#757a74 33%,#737772 100%));
   border: 1px solid #585C58;
   @include border-radius(3px);
-  color: $white;
+  color: #bbb;
   font-size: 19px;
   line-height: 34px;
   font-weight: bold;
