@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_region_Assembly constituency feature.
+ */
+
+include_once 'feature_region_assembly_constituency.features.inc';
