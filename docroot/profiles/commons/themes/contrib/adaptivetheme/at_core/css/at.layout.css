@@ -31,6 +31,11 @@
   clear: both;
 }
 
+.commons-q-a-rate-up-down {
+  margin-top: 65%;
+  width: 110%;
+}
+
 .clearfix {
   zoom: 1;
 }
