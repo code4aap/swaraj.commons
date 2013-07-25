@@ -12,6 +12,12 @@
 
 function alter_hybridauth_form_alter(&$form, &$form_state, $form_id) {
   global $user;
+ // dpm($form);
+  //dpm(user_load($user->uid));
+  if(!in_array("administrator", $user->roles) && arg(0) =="node" && arg(1) == "add") {
+    $form['og_group_ref']['und'][0]['default']['#disabled'] = TRUE;
+    $form['og_group_ref']['und'][0]['#element_validate'][] = "group_belong_validation";
+  }
   if ($form_id == "comment_node_post_form") {
     if($form['#node']->name == $user->name ) {
       $form['wrap'] = array(
@@ -19,12 +25,12 @@ function alter_hybridauth_form_alter(&$form, &$form_state, $form_id) {
         "#suffix" => '</div>'
       );
       
-        drupal_add_js ('jQuery(document).ready( function ()
-{
- //alert("test");
- if (jQuery("#hide-following") != null)
- jQuery(".flag-commons_follow_node .flag-wrapper").html("Following");
-});',array('type' => 'inline','scope' => 'footer','weight' =>5));
+  // this js is used to remove follwing button , in a node for those user who is a the author of that node
+  drupal_add_js ('jQuery(document).ready( function () 
+    {
+      if (jQuery("#hide-following") != null)
+      jQuery(".flag-commons_follow_node .flag-wrapper").html("Following");
+    });',array('type' => 'inline','scope' => 'footer','weight' =>5));
 
     }
   }
@@ -35,15 +41,13 @@ function alter_hybridauth_form_alter(&$form, &$form_state, $form_id) {
       $login_user_group[] = $value1;
     }
   }
- // dsm($login_user_group);
-
-  //dsm(og_get_all_group());
-
- // $form['og_group_ref']['und'][0]['default']['#default_value'] = "Delhi state";
+  
+ /* dpm($login_user_group);
+  dpm(og_get_all_group()); */
+  
   // hide the user register fields
   if ($form_id == 'user_register_form') {
-   // dpm($form);
-
+   
     unset($form['field_name_first']);
     unset($form['field_name_last']);
     unset($form['account']['mail']);
@@ -75,12 +79,12 @@ function alter_hybridauth_form_alter(&$form, &$form_state, $form_id) {
 }
 }
 
-function ajax_class_select_callback($form, $form_state) {
+/*function ajax_class_select_callback($form, $form_state) {
   return $form;
-}
+}*/
 
 
-function alter_hybridauth_node_presave($node) {
+/*function alter_hybridauth_node_presave($node) {
   $login_user_group = array();
   foreach (og_get_entity_groups("user") as $key => $value) {
     foreach ($value as $key1 => $value1) {
@@ -93,5 +97,27 @@ function alter_hybridauth_node_presave($node) {
   if(!in_array($group_id, $login_user_group)) {
       form_set_error("","You are not belong to this Group");
       $node->is_new = FALSE;
+  }
+}*/
+
+/**
+ * @author Akash Jain <akash.jain@innoraft.com>
+ * 
+ * @param type $form
+ * @param type $form_state
+ * 
+ * description -> Only validate that , user belong to node group 
+ */
+
+function group_belong_validation($form , $form_state) {
+  $login_user_group = array();
+  foreach (og_get_entity_groups("user") as $key => $value) {
+    foreach ($value as $key1 => $value1) {
+      $login_user_group[] = $value1;  // get value of all group id that user belong
+    }
+  }
+  $group_id = $form_state['values']['og_group_ref']['und'][0]['target_id'];
+  if(!in_array($group_id, $login_user_group)) { // check that user belong to that 
+      form_set_error("","Sorry !! , You are not belong to this Group");
   }
 }
