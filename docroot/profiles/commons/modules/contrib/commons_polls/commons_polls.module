@@ -26,17 +26,20 @@ function commons_polls_commons_bw_group_widget() {
  */
 function commons_polls_commons_bw_create_all_widget($group) {
   if (og_user_access('node', $group->nid, 'create poll content')) {
+    global $user;
     $link = l(t('Create a poll'),'node/add/poll',
     array('attributes' => array('class' => 'commons-polls-create'), 'query' => array('og_group_ref' => $group->nid))
     );
-    return array(
-      'commons_polls' => array(
+     if (in_array("administrator", $user->roles) || in_array("content moderator" , $user->roles)) {
+       return array(
+        'commons_polls' => array(
         'default' => TRUE,
         'link' => $link,
         'text' =>  t('Measure opinions on a topic'),
         '#weight' => -1,
       ),
-    );
+    ); 
+   }
   }
 }
 
