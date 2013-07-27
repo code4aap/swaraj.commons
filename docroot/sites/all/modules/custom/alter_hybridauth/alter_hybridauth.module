@@ -12,93 +12,32 @@
 
 function alter_hybridauth_form_alter(&$form, &$form_state, $form_id) {
   global $user;
- // dpm($form);
-  //dpm(user_load($user->uid));
+ 
   if(!in_array("administrator", $user->roles) && arg(0) =="node" && arg(1) == "add") {
     $form['og_group_ref']['und'][0]['default']['#disabled'] = TRUE;
     $form['og_group_ref']['und'][0]['#element_validate'][] = "group_belong_validation";
   }
-  if ($form_id == "comment_node_post_form") {
-    if($form['#node']->name == $user->name ) {
-      $form['wrap'] = array(
-        "#prefix" => '<div id = "hide-following">',
-        "#suffix" => '</div>'
-      );
-      
-  // this js is used to remove follwing button , in a node for those user who is a the author of that node
-  drupal_add_js ('jQuery(document).ready( function () 
-    {
-      if (jQuery("#hide-following") != null)
-      jQuery(".flag-commons_follow_node .flag-wrapper").html("Following");
-    });',array('type' => 'inline','scope' => 'footer','weight' =>5));
-
-    }
-  }
-
-  $login_user_group = array();
-  foreach (og_get_entity_groups("user") as $key => $value) {
-    foreach ($value as $key1 => $value1) {
-      $login_user_group[] = $value1;
-    }
-  }
-  
- /* dpm($login_user_group);
-  dpm(og_get_all_group()); */
-  
-  // hide the user register fields
+   
+  // hide the user register fields , because we use facebook login 
   if ($form_id == 'user_register_form') {
    
     unset($form['field_name_first']);
     unset($form['field_name_last']);
-    unset($form['account']['mail']);
     unset($form['actions']['submit']);
+    unset($form['account']['mail']);
     unset($form['field_country']);
     unset($form['field_user_state']);
     unset($form['field_user_district']);
-    unset($form['field_user_assembly_constituency']);
-    
-/*    $form['#prefix'] = '<div id = "student-exam-panel">';
-    $form['#suffix'] = '</div>';
-            
-    $form['field_user_state']['und']['#ajax'] = array(
-        'callback' => 'ajax_class_select_callback',
-        'wrapper' => 'student-exam-panel',
-        'effect' => 'fade',
-        'event' => 'change',);
- 
-  }*/
-
+    unset($form['field_user_assembly_constituency']);    
+  }
+  
   if ($form_id == 'user_login') {
-    $form['login_msg'] = array(
+      $form['login_msg'] = array(
       '#markup' =>t('<b>Or login using your email address and password</b>'),
       '#weight' => -40,
     );
-  }
- 
- // return $form;
+  } 
 }
-}
-
-/*function ajax_class_select_callback($form, $form_state) {
-  return $form;
-}*/
-
-
-/*function alter_hybridauth_node_presave($node) {
-  $login_user_group = array();
-  foreach (og_get_entity_groups("user") as $key => $value) {
-    foreach ($value as $key1 => $value1) {
-      $login_user_group[] = $value1;
-    }
-  }
-  $group_id = $node->og_group_ref['und'][0]['target_id'];
-  dpm($group_id);
-  dpm($login_user_group);
-  if(!in_array($group_id, $login_user_group)) {
-      form_set_error("","You are not belong to this Group");
-      $node->is_new = FALSE;
-  }
-}*/
 
 /**
  * @author Akash Jain <akash.jain@innoraft.com>
