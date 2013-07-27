@@ -1,0 +1,100 @@
+
+$dark-orange : #CF9011;  /* #0d8bb9 */
+$dark-orange2 : #C99D13; /* #689440 */
+$color : #333333; /* #333333 */
+$dark-blue: rgb(117, 33, 245);
+$dark-green : rgb(53, 196, 7);
+
+body.palette-green-orange {
+    color : rgb(72, 114, 49);
+}
+
+.palette-green-orange {
+    .header-color-row-one {
+     background-image : url("./../images/organge_fg.jpg");
+  // background-color: rgb(250, 158, 96);
+     border-top: 1px solid rgb(236, 149, 39);
+    }
+    .header-color-row-two {
+      background : url("./../images/green_fg.jpg") 400px;
+   // background-color: $dark-orange;
+      border-top: 1px solid rgb(216, 208, 25);
+      border-bottom: 1px solid $dark-orange2;
+    }
+}
+
+.boxshadow .palette-green-orange .header-color-row-one {
+  -webkit-box-shadow: rgb(241, 223, 90) 0px -1px 0px;
+  -moz-box-shadow: #2d3538 0px -1px 0px;
+   box-shadow: #2d3538 0px -1px 0px;
+   margin-top: 1px;
+}
+
+.palette-green-orange {
+  a {
+    color: $dark-orange ;
+  }
+  #site-slogan {
+     color: #D4F986;
+     text-shadow: 0px 0px 10px rgb(55, 151, 66); 
+  }
+  h2 {
+    color: rgb(73, 100, 15);
+  }
+  .palette-green-orange .commons-bw-create-all-widget-types li a {
+   color: $dark-orange;
+  }
+  h1.node-title {
+   color: $dark-orange;
+   a {
+      color: $dark-green;
+      }
+    }
+  }
+
+.palette-green-orange #menu-bar.nav ul.menu li {
+   :hover .arrow:before , .active-trail .arrow:before {
+  border-color: transparent transparent #10afe9 transparent;
+  }
+   :hover .arrow:after, .active-trail .arrow:after {
+  border-color: transparent transparent #0d8bb9 transparent;
+}
+}
+
+.palette-green-orange ul.commons-utility-links li.last {
+  $logout-setting-border : #CF781A;
+  border-left-color: $logout-setting-border;
+}
+
+
+.palette-green-orange .quicktabs-style-commons-pills ul.quicktabs-tabs li a {
+  span {
+   color: $dark-orange;
+  }
+}
+
+.palette-green-orange ul.primary.tabs li a {
+  span {
+   color: $dark-orange;
+  }
+}
+
+.palette-green-orange 
+ {
+  .quicktabs-style-commons-pills ul.quicktabs-tabs li a:hover , .palette-green-orange ul.primary.tabs li a:hover {
+  color: $dark-orange2;
+ }
+}
+
+
+.palette-green-orange .quicktabs-style-commons-pills ul.quicktabs-tabs li.active a {
+  span {
+    color: $color;
+  }
+}
+.palette-green-orange ul.primary.tabs li.active a {
+ span {
+    color: $color;
+  }
+}
+

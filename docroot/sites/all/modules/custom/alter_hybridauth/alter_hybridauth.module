@@ -11,19 +11,52 @@
  */
 
 function alter_hybridauth_form_alter(&$form, &$form_state, $form_id) {
-
-  // hide the user register fields
+  global $user;
+ 
+  if(!in_array("administrator", $user->roles) && arg(0) =="node" && arg(1) == "add") {
+    $form['og_group_ref']['und'][0]['default']['#disabled'] = TRUE;
+    $form['og_group_ref']['und'][0]['#element_validate'][] = "group_belong_validation";
+  }
+   
+  // hide the user register fields , because we use facebook login 
   if ($form_id == 'user_register_form') {
+   
     unset($form['field_name_first']);
     unset($form['field_name_last']);
-    unset($form['account']['mail']);
     unset($form['actions']['submit']);
+    unset($form['account']['mail']);
+    unset($form['field_country']);
+    unset($form['field_user_state']);
+    unset($form['field_user_district']);
+    unset($form['field_user_assembly_constituency']);    
   }
+  
   if ($form_id == 'user_login') {
-    $form['login_msg'] = array(
+      $form['login_msg'] = array(
       '#markup' =>t('<b>Or login using your email address and password</b>'),
       '#weight' => -40,
     );
-  }
+  } 
 }
 
+/**
+ * @author Akash Jain <akash.jain@innoraft.com>
+ * 
+ * @param type $form
+ * @param type $form_state
+ * 
+ * description -> Only validate that , user belong to node group 
+ */
+
+function group_belong_validation($form , $form_state) {
+  $login_user_group = array();
+  foreach (og_get_entity_groups("user") as $key => $value) {
+    foreach ($value as $key1 => $value1) {
+      $login_user_group[] = $value1;  // get value of all group id that user belong
+    }
+  }
+  $group_id = $form_state['values']['og_group_ref']['und'][0]['target_id'];
+  if(!in_array($group_id, $login_user_group)) { // check that user belong to that 
+      form_set_error("","Sorry !! , You are not belong to this Group");
+  }
+}
