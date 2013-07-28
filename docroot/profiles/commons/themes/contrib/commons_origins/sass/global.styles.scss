@@ -1859,7 +1859,7 @@ ul.action-links {
   }
 }
 
-.commons-sign-up {
+.commons-sign-up, .item-list-hybridauth-widget .ctools-modal-hybridauthmodal {
   @extend %btn-green;
   padding: 0 10px;
   min-width: 83px;
@@ -1870,7 +1870,7 @@ ul.action-links {
   margin-right: 4px;
 }
 
-.commons-login, .item-list-hybridauth-widget .ctools-modal-hybridauthmodal {
+.commons-login {
   box-shadow: 1px 1px 1px #C0C2BF inset, 0 3px 3px rgba(#000, 0.09);
   min-width: 83px;
   height: 34px;

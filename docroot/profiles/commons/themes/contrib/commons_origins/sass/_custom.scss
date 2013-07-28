@@ -125,6 +125,12 @@ $palette_brown_burnt_orange_dark: #62390E;
 $palette_brown_burnt_orange_btn_top: #EB9039;
 $palette_brown_burnt_orange_btn_bottom: #E18728;
 
+// Swaraj, Orange, Green
+$palette_swaraj_orange_green_green: #3A690A;
+$palette_swaraj_orange_green_orange: #F17E00;
+$palette_swaraj_orange_green_btn_top: #1C8B29;
+$palette_swaraj_orange_green_btn_bottom: #1C8B29;
+
 // List of palettes and options that will be looped through to build the differnt color palettes.
 // This variable gets called by an @each function in the partial /sass/_palettes.scss
 // The format is:
@@ -139,6 +145,7 @@ $palettes: (palette-orange-red $palette_orange_red_orange $palette_orange_red_re
 (palette-brick-brick $palette_brick_brick_light $palette_brick_brick_dark $palette_brick_brick_btn_top $palette_brick_brick_btn_bottom)
 (palette-gray-lightgray-blue $palette_gray_light_gray_blue_light $palette_gray_light_gray_blue_dark $palette_gray_light_gray_blue_btn_top $palette_gray_light_gray_blue_btn_bottom)
 (palette-black-white-red $palette_black_white_red_light $palette_black_white_red_dark $palette_black_white_red_btn_top $palette_black_white_red_btn_bottom)
+(palette-swaraj-orange-green $palette_swaraj_orange_green_green $palette_swaraj_orange_green_orange $palette_swaraj_orange_green_btn_top $palette_swaraj_orange_green_btn_bottom)
 (palette-brown-burnt-orange $palette_brown_burnt_orange_light $palette_brown_burnt_orange_dark $palette_brown_burnt_orange_btn_top $palette_brown_burnt_orange_btn_bottom);
 
 
