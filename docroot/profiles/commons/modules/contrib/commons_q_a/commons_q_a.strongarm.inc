@@ -28,21 +28,21 @@ function commons_q_a_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_answer';
-  $strongarm->value = '2';
+  $strongarm->value = '1';
   $export['comment_answer'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_mode_answer';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['comment_default_mode_answer'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_mode_question';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['comment_default_mode_question'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -91,7 +91,7 @@ function commons_q_a_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_question';
-  $strongarm->value = '0';
+  $strongarm->value = '1';
   $export['comment_question'] = $strongarm;
 
   $strongarm = new stdClass();
