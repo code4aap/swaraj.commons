@@ -1,0 +1,252 @@
+<?php 
+
+/**
+ * @file
+ * apply ajax in user registration form
+ */
+
+/**
+ * @Author Akash Jain <akash.jain@innoraft.com>
+ * implements hook_form_alter().
+ */
+
+function user_registration_profile_form_alter(&$form, &$form_state, $form_id) {
+  global $user;
+  // if any form contain district field , assembly constituency field then ajax is applied on it
+  if(isset($form['field_user_district']['und']['#options']) && isset($form['field_user_assembly_constituency']['und']['#options']) && isset($form['field_user_district']['und']['#default_value'][0]) && isset($form['field_user_district']['und']['#default_value'][0])) {
+    $form['#validate'][] = "user_profile_validate"; // after submission this form , then this function is call for validation
+    
+    if ($form['field_country']['und']['#default_value'][0] != get_tid_by_name("INDIA", "country")) {
+      $form['field_user_state']['#access'] = FALSE;
+      $form['field_user_district']['#access'] = FALSE;
+      $form['field_user_assembly_constituency']['#access'] = FALSE;
+    }
+    // foreach loop help to remove all state name from district name example-> ahmedabad (Gujarat) to only ahmedabad 
+    foreach ($form['field_user_district']['und']['#options'] as $key => $value) {
+      if (strstr($value , taxonomy_term_load($form['field_user_state']['und']['#default_value'][0])->name)) {
+        $form['field_user_district']['und']['#options'][$key] = substr_replace($value , "" , strpos($value , "("));
+      }
+      else {
+        unset($form['field_user_district']['und']['#options'][$key]); // remove other district which is not belong to state that user select
+      }
+    }
+
+    $dist_name = taxonomy_term_load($form['field_user_district']['und']['#default_value'][0])->name;
+    $dist_name = substr($dist_name,0,strpos($dist_name,"("));
+    $dist_name = trim($dist_name);
+
+    $state_namee = taxonomy_term_load($form['field_user_district']['und']['#default_value'][0])->name;
+    $state_namee = substr($state_namee,strpos($state_namee,"("));
+
+    $state_namee = str_replace("(", "", $state_namee);
+    $state_namee = str_replace(")", "", $state_namee);
+    $state_namee = trim($state_namee);
+
+    // foreach loop help to remove all state name and district name from assembly constituency name example->  xyz (ahmedabad ,Gujarat) to only xyz 
+    foreach ($form['field_user_assembly_constituency']['und']['#options'] as $key => $value) {
+      if(strstr($value , "(".$dist_name.",".$state_namee."")) {
+        $form['field_user_assembly_constituency']['und']['#options'][$key] = $value;
+      }
+      else {
+        unset($form['field_user_assembly_constituency']['und']['#options'][$key]);
+      }
+    }
+    
+    // apply a wrapper on whole form
+    $form['#prefix'] = '<div id = "student-exam-panel">';
+    $form['#suffix'] = '</div>';
+
+    // unset all value having _none because it occur error in validation beacuse _none is not a taxonomy tid
+    unset($form['field_user_state']['und']['#options']["_none"]);
+    unset($form['field_user_district']['und']['#options']["_none"]);
+    unset($form['field_user_assembly_constituency']['und']['#options']["_none"]);
+    ksort($form['field_user_state']['und']['#options']);
+    ksort($form['field_user_district']['und']['#options']);
+     
+    $form['field_country']['und']['#ajax'] = array(
+        'callback' => 'ajax_set_citizen_location',
+        'wrapper' => 'student-exam-panel',
+        'effect' => 'fade',
+        'event' => 'change',);
+    
+    $form['field_user_state']['und']['#ajax'] = array(
+        'callback' => 'ajax_set_citizen_location',
+        'wrapper' => 'student-exam-panel',
+        'effect' => 'fade',
+        'event' => 'change',);
+   
+     $form['field_user_district']['und']['#ajax'] = array(
+        'callback' => 'ajax_set_citizen_location',
+        'wrapper' => 'student-exam-panel',
+        'effect' => 'fade',
+        'event' => 'change',);
+   
+    if (isset($form_state['values']['field_country']['und'][0]['tid'])) {
+      $india_tid = get_tid_by_name("INDIA" , "country");
+      if ($india_tid == $form_state['values']['field_country']['und'][0]['tid']) {
+        $form['field_user_state']['#access'] = TRUE;
+        $form['field_user_district']['#access'] = TRUE;
+        $form['field_user_assembly_constituency']['#access'] = TRUE;
+      }
+      else {
+        $form['field_user_state']['#access'] = FALSE;
+        $form['field_user_district']['#access'] = FALSE;
+        $form['field_user_assembly_constituency']['#access'] = FALSE;
+      }
+    }
+    
+    if(isset($form_state['values']['field_user_state']['und'][0]['tid'])) {      
+      if($form_state['values']['field_user_state']['und'][0]['tid'] != "0") {
+        $district_name = set_value_in_district($form , $form_state);
+        $form['field_user_district']['und']['#options'] = $district_name;
+        $form['field_user_assembly_constituency']['und']['#options'] = array("0"=>"- Select a value -");
+      }
+    }
+
+    if (isset($form_state['values']['field_user_district']['und'][0]['tid'])) {
+      if ($form_state['values']['field_user_district']['und'][0]['tid'] != "0") {
+        $assembly_constituency_name = set_value_in_assembly_constituency($form , $form_state);
+        $form['field_user_assembly_constituency']['und']['#options'] = $assembly_constituency_name;
+      }
+    }
+  }
+  return $form;
+}
+
+/**
+ * @author Akash Jain <akash.jain@innoraft.com>
+ * 
+ * @param type $form
+ * @param type $form_state
+ * @return type
+ * 
+ * Description -> this is ajax callback function
+ */
+
+function ajax_set_citizen_location($form, $form_state) {
+  return $form;
+}
+ 
+/**
+ * @author Akash Jain <akash.jain@innoraft.com>
+ * 
+ * @param type $form
+ * @param type $form_state
+ * @return type
+ * 
+ * Description -> it set assembly constituency value in its drop down corresponding to district and state
+ */
+
+function set_value_in_assembly_constituency($form,$form_state) {
+  if ($form_state['values']['field_user_district']['und'][0]['tid'] != "0" &&  $form_state['values']['field_user_state']['und'][0]['tid'] != "0") {
+    $state_name =  taxonomy_term_load($form_state['values']['field_user_state']['und'][0]['tid'])->name;
+    $district_name =  taxonomy_term_load($form_state['values']['field_user_district']['und'][0]['tid'])->name;
+    $district_vid = get_vid_by_term("abdasa (kachchh,Gujarat)");
+    $assembly_constituency_name = array("0" => "- Select a value -");
+
+    $district_name = str_replace(" (" , "," , $district_name);
+    $district_name = str_replace(" )" , "" , $district_name);
+    $district_state_exp = "(" . $district_name;
+    
+    foreach (taxonomy_get_tree($district_vid) as $key => $value) {
+      if (strstr($value->name , $district_state_exp)) {
+        $assembly_constituency_name[$value->tid] = str_replace($district_state_exp , "" , $value->name );
+      }
+    }
+    return $assembly_constituency_name;
+  }
+}
+
+/**
+ * @author Akash Jain <akash.jain@innoraft.com>
+ * 
+ * @param type $form
+ * @param type $form_state
+ * @return type
+ * 
+ * Description -> it set all district value in district dropdown belong to state
+ */
+
+function set_value_in_district($form,$form_state) {
+    $state_name =  taxonomy_term_load($form_state['values']['field_user_state']['und'][0]['tid'])->name;
+    $state_vid = get_vid_by_term("agra (Uttar Pradesh)");
+    $district_name = array("0"=>"- Select a value -");
+    foreach (taxonomy_get_tree($state_vid) as $key => $value) {
+      if (strstr($value->name , $state_name)) {
+        $district_name[$value->tid] = str_replace("(". $state_name . ")" , "" , $value->name );
+      }
+    }
+    return $district_name;
+  }
+
+  /**
+   * @author Akash Jain <akash.jain@innoraft.com>
+   * 
+   * @param type $term_name
+   * @return type
+   * 
+   * Description -> when pass a taxonomy term it return its vocabulary id 
+   */
+  
+function get_vid_by_term($term_name) {
+  $term_tid_array = taxonomy_get_term_by_name($term_name);
+  foreach ($term_tid_array as $term_tid_array_key => $term_tid_array_value) {
+    $term_info = $term_tid_array[$term_tid_array_key];
+    return $term_info->vid;
+  }
+}
+
+/**
+ * @author Akash Jain <akash.jain@innoraft.com>
+ * 
+ * @param type $taxonomy_term
+ * @param type $machine_name
+ * @return tid_array , tid
+ * 
+ * description -> if machine name is not pass ,
+ * then it return an array of tid else
+ * if machine name is not null then it return tid 
+ */
+function get_tid_by_name($taxonomy_term, $machine_name = null) {
+  $taxonomy_tid = array();
+  $taxonomy_term = taxonomy_get_term_by_name($taxonomy_term);
+  foreach ($taxonomy_term as $key => $value) {
+    if($machine_name == null) {
+      $taxonomy_tid[] = $value->tid;
+    }
+    elseif ($value->vocabulary_machine_name == $machine_name) {
+      return $value->tid;
+    }
+  }
+}
+
+/**
+ * @author Akash Jain <akash.jain@innoraft.com>
+ * 
+ * @param type $form
+ * @param type $form_state
+ * 
+ * Description -> Function used to check that state , district , and assembly constituency belong each other or not
+ */
+
+function user_profile_validate($form, $form_state) {
+  if ($form_state['values']['field_user_district']['und'][0]['tid'] == 0 ) {
+    form_set_error("","District field is required");   
+  }
+  elseif ($form_state['values']['field_user_assembly_constituency']['und'][0]['tid'] == 0 ) {
+      form_set_error("","Assembly constituency field is required");
+  }
+  else {
+    $state_name =  taxonomy_term_load($form_state['values']['field_user_state']['und'][0]['tid'])->name;
+    $district_name =  taxonomy_term_load($form_state['values']['field_user_district']['und'][0]['tid'])->name;
+    $assembly_constituency = taxonomy_term_load($form_state['values']['field_user_assembly_constituency']['und'][0]['tid'])->name;
+    if (strstr($district_name, $state_name)) {
+      if (!strstr($assembly_constituency, $state_name)) {
+        form_set_error("","Assembly constituency is not belong to District , Refresh the page and do it again");
+      }
+    }
+    else {
+        form_set_error("","District is not belong to state , Refresh the page and do it again");
+    }
+  }
+}
