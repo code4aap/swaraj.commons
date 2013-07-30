@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_url aliases pattern feature.
+ */
+
+include_once 'feature_url_aliases_pattern.features.inc';
