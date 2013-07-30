@@ -1,0 +1,4 @@
+name = User Registration Profile
+description = "Apply ajax in country , state , district field in user gegistration field"
+package = Innoraft
+core = 7.x
