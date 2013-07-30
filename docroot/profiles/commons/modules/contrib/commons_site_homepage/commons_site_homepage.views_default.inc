@@ -115,7 +115,8 @@ function commons_site_homepage_views_default_views() {
   $handler->display->display_options['filters']['cf_user_follow']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
-    3 => 0,
+    11 => 0,
+    16 => 0,
   );
   /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type_1']['id'] = 'type_1';
