@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature show comment feature.
+ */
+
+include_once 'feature_show_comment.features.inc';
