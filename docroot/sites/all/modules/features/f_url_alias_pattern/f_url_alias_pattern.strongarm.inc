@@ -27,6 +27,20 @@ function f_url_alias_pattern_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_group_pattern';
+  $strongarm->value = '[node:field-group-election-name]/[node:group_name]';
+  $export['pathauto_node_group_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_pattern';
+  $strongarm->value = 'groups/[node:og-group-ref:0:title]/[node:title]';
+  $export['pathauto_node_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_poll_pattern';
   $strongarm->value = '[node:target_election]/[node:group_name]/poll/[node:title]';
   $export['pathauto_node_poll_pattern'] = $strongarm;
