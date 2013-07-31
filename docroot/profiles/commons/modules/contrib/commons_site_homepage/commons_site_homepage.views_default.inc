@@ -44,6 +44,16 @@ function commons_site_homepage_views_default_views() {
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
   $handler->display->display_options['empty']['area']['content'] = 'No content matched the filters you selected.';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
+  /* Relationship: OG membership: Vote results */
+  $handler->display->display_options['relationships']['votingapi_cache']['id'] = 'votingapi_cache';
+  $handler->display->display_options['relationships']['votingapi_cache']['table'] = 'og_membership';
+  $handler->display->display_options['relationships']['votingapi_cache']['field'] = 'votingapi_cache';
+  $handler->display->display_options['relationships']['votingapi_cache']['required'] = TRUE;
+  $handler->display->display_options['relationships']['votingapi_cache']['votingapi'] = array(
+    'value_type' => 'option',
+    'tag' => 'commons_thumbs_up_down',
+    'function' => 'count',
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -105,6 +115,7 @@ function commons_site_homepage_views_default_views() {
   $handler->display->display_options['filters']['cf_user_follow']['table'] = 'node';
   $handler->display->display_options['filters']['cf_user_follow']['field'] = 'cf_user_follow';
   $handler->display->display_options['filters']['cf_user_follow']['value'] = '0';
+  $handler->display->display_options['filters']['cf_user_follow']['group'] = 1;
   $handler->display->display_options['filters']['cf_user_follow']['exposed'] = TRUE;
   $handler->display->display_options['filters']['cf_user_follow']['expose']['operator_id'] = '';
   $handler->display->display_options['filters']['cf_user_follow']['expose']['label'] = 'I\'m';
@@ -125,6 +136,7 @@ function commons_site_homepage_views_default_views() {
   $handler->display->display_options['filters']['type_1']['value'] = array(
     'group' => 'group',
   );
+  $handler->display->display_options['filters']['type_1']['group'] = 1;
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
