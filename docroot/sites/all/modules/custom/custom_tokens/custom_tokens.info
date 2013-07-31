@@ -1,0 +1,4 @@
+name = Custom Token
+description = "Create custome token for url alias"
+package = Swaraj Custom
+core = 7.x
