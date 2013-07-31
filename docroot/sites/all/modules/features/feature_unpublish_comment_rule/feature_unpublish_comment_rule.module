@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature unpublish comment rule feature.
+ */
+
+include_once 'feature_unpublish_comment_rule.features.inc';
