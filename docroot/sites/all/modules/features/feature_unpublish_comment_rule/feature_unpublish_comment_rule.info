@@ -1,0 +1,17 @@
+name = feature unpublish comment rule
+description = This rule helps in unpublish comment when user make that comment as inappropriate
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = feature_unpublish_comment_rule
+dependencies[] = ctools
+dependencies[] = entity
+dependencies[] = flag
+dependencies[] = rdf
+dependencies[] = rules
+dependencies[] = schemaorg
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[rules_config][] = rules_unpublish_comment_rule
+features[variable][] = rules_empty_sets
