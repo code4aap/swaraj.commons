@@ -3564,8 +3564,15 @@ body.front.logged-in .view-commons-homepage-content .article.node {
   }
 }
 
+.item-list ul.hybridauth-widget li a {
+	padding:2px 10px 2px 10px;
+}
+
+
 /**
  * Add the color palettes
  */
 
 @import 'palettes';
+
+
