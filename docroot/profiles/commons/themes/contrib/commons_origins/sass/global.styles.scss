@@ -1408,6 +1408,10 @@ a {
   background: image-url('icons/icon-events.png') no-repeat center 10px;
 }
 
+.main-menu-donation.donation-help-people {
+  background: image-url('icons/inr.png') no-repeat center 10px;
+}
+
 #menu-bar.nav ul.menu li.main-menu-search {
   display: none;
 
@@ -1859,7 +1863,7 @@ ul.action-links {
   }
 }
 
-.commons-sign-up {
+.commons-sign-up, .item-list-hybridauth-widget .ctools-modal-hybridauthmodal {
   @extend %btn-green;
   padding: 0 10px;
   min-width: 83px;
@@ -1870,11 +1874,11 @@ ul.action-links {
   margin-right: 4px;
 }
 
-.commons-login, .item-list-hybridauth-widget .ctools-modal-hybridauthmodal {
+.commons-login {
   box-shadow: 1px 1px 1px #C0C2BF inset, 0 3px 3px rgba(#000, 0.09);
   min-width: 83px;
   height: 34px;
-  padding: 0 10px;
+  padding: 0 10px !important;
   background-color: #919591;
   @include filter-gradient(#919591, #737772, vertical); // IE6-9
   @include background-image(linear-gradient(top,  #919591 0%,#90948f 12%,#757a74 33%,#737772 100%));
@@ -3564,8 +3568,15 @@ body.front.logged-in .view-commons-homepage-content .article.node {
   }
 }
 
+.item-list ul.hybridauth-widget li a {
+	padding:2px 10px 2px 10px;
+}
+
+
 /**
  * Add the color palettes
  */
 
 @import 'palettes';
+
+

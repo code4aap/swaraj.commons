@@ -52,7 +52,7 @@ body.page-node .pane-views-panes > div, .page-events .view-commons-events-upcomi
   }
 }
 
-.button-alert, .commons-sign-up, .pane-commons-groups-commons-groups-create-group a, #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #content-column .view-content input[type="submit"], form.commons-events-form-float input, form.commons-events-form-float input:hover, .pane-commons-events-commons-events-create-event-link a {
+.button-alert, .commons-sign-up, .item-list-hybridauth-widget .ctools-modal-hybridauthmodal, .pane-commons-groups-commons-groups-create-group a, #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #content-column .view-content input[type="submit"], form.commons-events-form-float input, form.commons-events-form-float input:hover, .pane-commons-events-commons-events-create-event-link a {
   box-shadow: 1px 1px 1px #abe0a2 inset, 0 3px 3px rgba(0, 0, 0, 0.09);
   padding: 0 10px;
   background-color: #6eca5d;
@@ -73,10 +73,10 @@ body.page-node .pane-views-panes > div, .page-events .view-commons-events-upcomi
   display: inline-block;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.49);
 }
-.button-alert, .commons-sign-up, .pane-commons-groups-commons-groups-create-group a, #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #content-column .view-content input[type="submit"], form.commons-events-form-float input, form.commons-events-form-float input:hover, .pane-commons-events-commons-events-create-event-link a, .button-alert:link, .commons-sign-up:link, .pane-commons-groups-commons-groups-create-group a:link, #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a:link, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a:link, #content-column .view-content input[type="submit"]:link, form.commons-events-form-float input:link, form.commons-events-form-float input:link:hover, .pane-commons-events-commons-events-create-event-link a:link, .button-alert:visited, .commons-sign-up:visited, .pane-commons-groups-commons-groups-create-group a:visited, #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a:visited, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a:visited, #content-column .view-content input[type="submit"]:visited, form.commons-events-form-float input:visited, form.commons-events-form-float input:visited:hover, .pane-commons-events-commons-events-create-event-link a:visited, .button-alert:active, .commons-sign-up:active, .pane-commons-groups-commons-groups-create-group a:active, #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a:active, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a:active, #content-column .view-content input[type="submit"]:active, form.commons-events-form-float input:active, form.commons-events-form-float input:active:hover, .pane-commons-events-commons-events-create-event-link a:active, .button-alert:hover, .commons-sign-up:hover, .pane-commons-groups-commons-groups-create-group a:hover, #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a:hover, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a:hover, #content-column .view-content input[type="submit"]:hover, form.commons-events-form-float input:hover, .pane-commons-events-commons-events-create-event-link a:hover {
+.button-alert, .commons-sign-up, .item-list-hybridauth-widget .ctools-modal-hybridauthmodal, .pane-commons-groups-commons-groups-create-group a, #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #content-column .view-content input[type="submit"], form.commons-events-form-float input, form.commons-events-form-float input:hover, .pane-commons-events-commons-events-create-event-link a, .button-alert:link, .commons-sign-up:link, .item-list-hybridauth-widget .ctools-modal-hybridauthmodal:link, .pane-commons-groups-commons-groups-create-group a:link, #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a:link, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a:link, #content-column .view-content input[type="submit"]:link, form.commons-events-form-float input:link, .pane-commons-events-commons-events-create-event-link a:link, .button-alert:visited, .commons-sign-up:visited, .item-list-hybridauth-widget .ctools-modal-hybridauthmodal:visited, .pane-commons-groups-commons-groups-create-group a:visited, #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a:visited, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a:visited, #content-column .view-content input[type="submit"]:visited, form.commons-events-form-float input:visited, .pane-commons-events-commons-events-create-event-link a:visited, .button-alert:active, .commons-sign-up:active, .item-list-hybridauth-widget .ctools-modal-hybridauthmodal:active, .pane-commons-groups-commons-groups-create-group a:active, #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a:active, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a:active, #content-column .view-content input[type="submit"]:active, form.commons-events-form-float input:active, .pane-commons-events-commons-events-create-event-link a:active, .button-alert:hover, .commons-sign-up:hover, .item-list-hybridauth-widget .ctools-modal-hybridauthmodal:hover, .pane-commons-groups-commons-groups-create-group a:hover, #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a:hover, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a:hover, #content-column .view-content input[type="submit"]:hover, form.commons-events-form-float input:hover, .pane-commons-events-commons-events-create-event-link a:hover {
   color: white;
 }
-.button-alert:hover, .commons-sign-up:hover, .pane-commons-groups-commons-groups-create-group a:hover, #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a:hover, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a:hover, #content-column .view-content input[type="submit"]:hover, form.commons-events-form-float input:hover, .pane-commons-events-commons-events-create-event-link a:hover {
+.button-alert:hover, .commons-sign-up:hover, .item-list-hybridauth-widget .ctools-modal-hybridauthmodal:hover, .pane-commons-groups-commons-groups-create-group a:hover, #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a:hover, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a:hover, #content-column .view-content input[type="submit"]:hover, form.commons-events-form-float input:hover, .pane-commons-events-commons-events-create-event-link a:hover {
   text-decoration: none;
 }
 
@@ -518,7 +518,7 @@ var {
   margin-bottom: 20px;
 }
 .node .comment-comments a:before {
-  background: url('../images/icons-se7682cf316.png') 0 -212px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -212px no-repeat;
   width: 13px;
   height: 12px;
   display: inline-block;
@@ -531,7 +531,7 @@ var {
   float: right;
   width: 90px;
   list-style: none;
-  margin: 0.5em -90px 0 0;
+  margin: .5em -90px 0 0;
   text-align: right;
 }
 .node-actions, .block-content .node-actions {
@@ -555,7 +555,7 @@ var {
   margin-bottom: 0;
 }
 .node-teaser.node-promoted {
-  background-image: url('../images/node-promoted-star.png?1373639941');
+  background-image: url('../images/node-promoted-star.png?1374654352');
   background-position: top right;
   background-repeat: no-repeat;
   background-color: #f7f7f7;
@@ -613,7 +613,7 @@ var {
   position: absolute;
   right: -5px;
   top: 10px;
-  background: url('../images/user_img_arrow.png?1373639941');
+  background: url('../images/user_img_arrow.png?1374654352');
 }
 .node .user-picture img, .comment .user-picture img, .node
 .views-field-picture img, .comment
@@ -713,7 +713,7 @@ var {
  * Generic styles for the more link
  */
 .more-link {
-  background-image: url('../images/icons/icon-more.png?1373639941');
+  background-image: url('../images/icons/icon-more.png?1374654352');
   background-repeat: no-repeat;
   min-height: 14px;
   padding: 0 0 0 1.7em;
@@ -796,13 +796,13 @@ ul.primary.tabs li.active a span {
 .quicktabs-style-commons-pills ul.quicktabs-tabs li.active a:after,
 ul.primary.tabs li.active a:after {
   position: absolute;
-  bottom: -0.7em;
+  bottom: -.7em;
   left: 50%;
   display: block;
   width: 0;
   height: 0;
   overflow: hidden;
-  margin-left: -0.6em;
+  margin-left: -.6em;
   content: "";
   border-width: .4em .6em;
   border-style: solid;
@@ -831,7 +831,7 @@ ul.inline li.sharethis {
 }
 li.sharethis:before {
   content: "";
-  background: url('../images/icons-se7682cf316.png') 0 -683px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -722px no-repeat;
   width: 12px;
   height: 12px;
   display: inline-block;
@@ -1041,7 +1041,7 @@ h1.node-title a:hover {
 }
 .page-node .field-name-field-topics .field-item:before {
   content: "";
-  background: url('../images/icons-se7682cf316.png') 0 -1155px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -1194px no-repeat;
   width: 8px;
   height: 8px;
   display: inline-block;
@@ -1052,7 +1052,7 @@ h1.node-title a:hover {
 }
 .page-node .field-name-og-group-ref .field-item:before {
   content: "";
-  background: url('../images/icons-se7682cf316.png') 0 -1001px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -1040px no-repeat;
   width: 8px;
   height: 8px;
   display: inline-block;
@@ -1085,7 +1085,7 @@ h1.node-title a:hover {
 }
 #comments h2.comment-title:before {
   content: "";
-  background: url('../images/icons-se7682cf316.png') 0 -30px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -30px no-repeat;
   width: 31px;
   height: 24px;
   display: inline-block;
@@ -1149,7 +1149,7 @@ h1.node-title a:hover {
 }
 .comment-reply:before {
   content: "";
-  background: url('../images/icons-se7682cf316.png') 0 -1061px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -1100px no-repeat;
   width: 13px;
   height: 12px;
   display: inline-block;
@@ -1267,7 +1267,7 @@ h1.node-title a:hover {
 .field-name-field-logo {
   float: left;
   width: 70px;
-  margin: 0.5em 0 0 -70px;
+  margin: .5em 0 0 -70px;
   position: relative;
   left: 70px;
 }
@@ -1337,7 +1337,7 @@ h1.node-title a:hover {
 .view-commons-follow-user .flag-commons-follow-user a.flag-action:before,
 .view-commons-follow-taxonomy-term .flag-commons-follow-term a.flag-action:before {
   content: "";
-  background: url('../images/icons-se7682cf316.png') 0 -939px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -978px no-repeat;
   width: 13px;
   height: 11px;
   display: inline-block;
@@ -1404,7 +1404,7 @@ h1.node-title a:hover {
 .flag-inappropriate-node:before {
   content: "";
   top: 0;
-  background: url('../images/icons-se7682cf316.png') 0 0 no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 0 no-repeat;
   width: 12px;
   height: 10px;
   display: inline-block;
@@ -1447,7 +1447,7 @@ h1.node-title a:hover {
   width: 58px;
   height: 22px;
   display: inline-block;
-  background-image: url('../images/tag-featured.png?1373639941');
+  background-image: url('../images/tag-featured.png?1374654352');
   background-repeat: no-repeat;
   margin: 6px 0 0 5px;
 }
@@ -1456,7 +1456,7 @@ h1.node-title a:hover {
   width: 27px;
   height: 22px;
   display: inline-block;
-  background-image: url('../images/tag-new.png?1373639941');
+  background-image: url('../images/tag-new.png?1374654352');
   background-repeat: no-repeat;
   margin: 4px 0 0 5px;
 }
@@ -1496,7 +1496,7 @@ h1.node-title a:hover {
 }
 .page-user .pane-user-field-facebook-url a:before {
   content: "";
-  background: url('../images/icons-se7682cf316.png') 0 -166px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -166px no-repeat;
   width: 26px;
   height: 26px;
   display: inline-block;
@@ -1515,7 +1515,7 @@ h1.node-title a:hover {
 }
 .page-user .pane-user-field-linkedin-url a:before {
   content: "";
-  background: url('../images/icons-se7682cf316.png') 0 -74px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -74px no-repeat;
   width: 26px;
   height: 26px;
   display: inline-block;
@@ -1534,7 +1534,7 @@ h1.node-title a:hover {
 }
 .page-user .pane-user-field-twitter-url a:before {
   content: "";
-  background: url('../images/icons-se7682cf316.png') 0 -120px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -120px no-repeat;
   width: 26px;
   height: 26px;
   display: inline-block;
@@ -1613,7 +1613,7 @@ a:hover, a:focus {
   padding: 0;
 }
 #menu-bar.nav ul.menu li:hover, #menu-bar.nav ul.menu li.active-trail {
-  background: url('../images/main-nav-hover.png?1373639941') repeat-x left top;
+  background: url('../images/main-nav-hover.png?1374654352') repeat-x left top;
 }
 #menu-bar.nav ul.menu li:hover .arrow:before, #menu-bar.nav ul.menu li.active-trail .arrow:before {
   content: "";
@@ -1666,22 +1666,26 @@ a:hover, a:focus {
 }
 
 .main-menu-home a {
-  background: url('../images/icons/icon-home.png?1373639941') no-repeat center 10px;
+  background: url('../images/icons/icon-home.png?1374654352') no-repeat center 10px;
 }
 
 .main-menu-groups a {
-  background: url('../images/icons/icon-groups.png?1373639941') no-repeat center 10px;
+  background: url('../images/icons/icon-groups.png?1374654352') no-repeat center 10px;
 }
 
 .main-menu-events a {
-  background: url('../images/icons/icon-events.png?1373639941') no-repeat center 10px;
+  background: url('../images/icons/icon-events.png?1374654352') no-repeat center 10px;
+}
+
+.main-menu-donation.donation-help-people {
+  background: url('../images/icons/inr.png?1375340650') no-repeat center 10px;
 }
 
 #menu-bar.nav ul.menu li.main-menu-search {
   display: none;
 }
 #menu-bar.nav ul.menu li.main-menu-search a {
-  background: url('../images/icons/icon-search.png?1373639941') no-repeat center 10px;
+  background: url('../images/icons/icon-search.png?1374654352') no-repeat center 10px;
 }
 
 #block-commons-utility-links-utility-links {
@@ -2048,7 +2052,7 @@ ul.action-links {
   display: block;
 }
 
-.commons-sign-up {
+.commons-sign-up, .item-list-hybridauth-widget .ctools-modal-hybridauthmodal {
   padding: 0 10px;
   min-width: 83px;
   height: 34px;
@@ -2058,11 +2062,11 @@ ul.action-links {
   margin-right: 4px;
 }
 
-.commons-login, .item-list-hybridauth-widget .ctools-modal-hybridauthmodal {
+.commons-login {
   box-shadow: 1px 1px 1px #c0c2bf inset, 0 3px 3px rgba(0, 0, 0, 0.09);
   min-width: 83px;
   height: 34px;
-  padding: 0 10px;
+  padding: 0 10px !important;
   background-color: #919591;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF919591', endColorstr='#FF737772');
@@ -2085,7 +2089,7 @@ ul.action-links {
   display: inline-block;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.49);
 }
-.commons-login:hover, .item-list-hybridauth-widget .ctools-modal-hybridauthmodal:hover {
+.commons-login:hover {
   text-decoration: none;
 }
 
@@ -2162,7 +2166,7 @@ body.page-node .pane-views-panes h2 {
 .view-commons-groups-recent-content .type-Wiki:before,
 .view-commons-radioactivity-groups-active-in-group .type-Wiki:before {
   content: "";
-  background: url('../images/icons-se7682cf316.png') 0 -491px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -530px no-repeat;
   width: 13px;
   height: 13px;
   display: inline-block;
@@ -2180,7 +2184,7 @@ body.page-node .pane-views-panes h2 {
 .view-commons-groups-recent-content .type-Event:before,
 .view-commons-radioactivity-groups-active-in-group .type-Event:before {
   content: "";
-  background: url('../images/icons-se7682cf316.png') 0 -715px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -754px no-repeat;
   width: 12px;
   height: 12px;
   display: inline-block;
@@ -2198,7 +2202,7 @@ body.page-node .pane-views-panes h2 {
 .view-commons-groups-recent-content .type-Poll:before,
 .view-commons-radioactivity-groups-active-in-group .type-Poll:before {
   content: "";
-  background: url('../images/icons-se7682cf316.png') 0 -811px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -850px no-repeat;
   width: 11px;
   height: 11px;
   display: inline-block;
@@ -2216,7 +2220,7 @@ body.page-node .pane-views-panes h2 {
 .view-commons-groups-recent-content .type-Post:before,
 .view-commons-radioactivity-groups-active-in-group .type-Post:before {
   content: "";
-  background: url('../images/icons-se7682cf316.png') 0 -970px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -1009px no-repeat;
   width: 11px;
   height: 11px;
   display: inline-block;
@@ -2240,7 +2244,7 @@ body.page-node .pane-views-panes h2 {
 .view-commons-radioactivity-groups-active-in-group .type-Question:before,
 .view-commons-radioactivity-groups-active-in-group .type-Answer:before {
   content: "";
-  background: url('../images/icons-se7682cf316.png') 0 -619px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -658px no-repeat;
   width: 13px;
   height: 13px;
   display: inline-block;
@@ -2285,7 +2289,7 @@ body.page-node .pane-views-panes h2 {
   text-align: right;
 }
 .pane-commons-groups-commons-groups-create-group a:before {
-  background: url('../images/icons-se7682cf316.png') 0 -353px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -392px no-repeat;
   width: 15px;
   height: 15px;
   display: inline-block;
@@ -2303,7 +2307,7 @@ body.page-node .pane-views-panes h2 {
   margin: 0 0 0 18px;
 }
 .view-id-commons_events_upcoming .views-field-title {
-  background-image: url('../images/icons/icon-gray-event.png?1373639941');
+  background-image: url('../images/icons/icon-gray-event.png?1374654352');
   background-repeat: no-repeat;
   background-position: left 4px;
   margin: 0;
@@ -2539,7 +2543,7 @@ body.page-node .pane-views-panes h2 {
 }
 .pane-node-flag-commons-follow-group-link .flag-action:before {
   content: "";
-  background: url('../images/icons-se7682cf316.png') 0 -590px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -629px no-repeat;
   width: 11px;
   height: 9px;
   display: inline-block;
@@ -2558,12 +2562,12 @@ body.page-node .pane-views-panes h2 {
   margin: 0 0 0 18px;
 }
 .view-id-commons_featured .type-Event {
-  background-image: url('../images/icons/icon-gray-event.png?1373639941');
+  background-image: url('../images/icons/icon-gray-event.png?1374654352');
   background-position: left 1px;
   padding: 0 0 0 18px;
 }
 .view-id-commons_featured .type-Post {
-  background-image: url('../images/icons/icon-gray-post.png?1373639941');
+  background-image: url('../images/icons/icon-gray-post.png?1374654352');
   background-position: left 1px;
   padding: 0 0 0 18px;
 }
@@ -2600,7 +2604,7 @@ body.page-node .pane-views-panes h2 {
   cursor: pointer;
 }
 .commons-bw-create-choose span {
-  background: url('../images/icons-se7682cf316.png') 0 -1125px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -1164px no-repeat;
   width: 8px;
   height: 10px;
   display: inline-block;
@@ -2662,7 +2666,7 @@ body.page-node .pane-views-panes h2 {
   padding: 10px 10px 10px 27px;
 }
 .commons-bw-create-all-widget-types li .commons-polls-create:before {
-  background: url('../images/icons-se7682cf316.png') 0 -811px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -850px no-repeat;
   width: 11px;
   height: 11px;
   display: inline-block;
@@ -2675,7 +2679,7 @@ body.page-node .pane-views-panes h2 {
   top: 13px;
 }
 .commons-bw-create-all-widget-types li .commons-posts-create:before {
-  background: url('../images/icons-se7682cf316.png') 0 -970px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -1009px no-repeat;
   width: 11px;
   height: 11px;
   display: inline-block;
@@ -2688,7 +2692,7 @@ body.page-node .pane-views-panes h2 {
   top: 13px;
 }
 .commons-bw-create-all-widget-types li .commons-wikis-create:before {
-  background: url('../images/icons-se7682cf316.png') 0 -491px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -530px no-repeat;
   width: 13px;
   height: 13px;
   display: inline-block;
@@ -2701,7 +2705,7 @@ body.page-node .pane-views-panes h2 {
   top: 13px;
 }
 .commons-bw-create-all-widget-types li .commons-events-create:before {
-  background: url('../images/icons-se7682cf316.png') 0 -715px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -754px no-repeat;
   width: 12px;
   height: 12px;
   display: inline-block;
@@ -2714,7 +2718,7 @@ body.page-node .pane-views-panes h2 {
   top: 13px;
 }
 .commons-bw-create-all-widget-types li .commons-q-a-create:before {
-  background: url('../images/icons-se7682cf316.png') 0 -619px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -658px no-repeat;
   width: 13px;
   height: 13px;
   display: inline-block;
@@ -2825,7 +2829,7 @@ body.page-node .pane-views-panes h2 {
   border: none !important;
   width: 12px !important;
   height: 12px !important;
-  background-image: url('../images/icons/ico_search_wht.png?1373639941') !important;
+  background-image: url('../images/icons/ico_search_wht.png?1374654352') !important;
   text-indent: -9999px !important;
   padding: 0 !important;
   margin: 10px 2px !important;
@@ -3400,13 +3404,13 @@ body.front.logged-in .view-commons-homepage-content .article.node.node-page .lin
  *  Placeholder styles
  */
 #menu-bar.nav .menu-item-193 a {
-  background-image: url('../images/icons/icon-home.png?1373639941');
+  background-image: url('../images/icons/icon-home.png?1374654352');
 }
 #menu-bar.nav .menu-item-194 a {
-  background-image: url('../images/icons/icon-groups.png?1373639941');
+  background-image: url('../images/icons/icon-groups.png?1374654352');
 }
 #menu-bar.nav .menu-item-195 a {
-  background-image: url('../images/icons/icon-events.png?1373639941');
+  background-image: url('../images/icons/icon-events.png?1374654352');
 }
 
 /**
@@ -3489,7 +3493,7 @@ body.front.logged-in .view-commons-homepage-content .article.node.node-page .lin
   font-size: 1.1em;
 }
 .pane-commons-events-commons-events-create-event-link a:before {
-  background: url('../images/icons-se7682cf316.png') 0 -388px no-repeat;
+  background: url('../images/icons-sfe4ef5da84.png') 0 -427px no-repeat;
   width: 15px;
   height: 15px;
   display: inline-block;
@@ -3669,6 +3673,10 @@ body.front.logged-in .view-commons-homepage-content .article.node.node-page .lin
   max-width: 100%;
 }
 
+.item-list ul.hybridauth-widget li a {
+  padding: 2px 10px 2px 10px;
+}
+
 /**
  * Add the color palettes
  */
@@ -3754,7 +3762,7 @@ body.front.logged-in .view-commons-homepage-content .article.node.node-page .lin
   -moz-box-shadow: #a20f00 1px 0px 0px;
   box-shadow: #a20f00 1px 0px 0px;
 }
-.palette-orange-red .button-alert, .palette-orange-red .commons-sign-up, .palette-orange-red .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-orange-red a, .palette-orange-red #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-orange-red .attachment-before > a, .palette-orange-red #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-orange-red a, .palette-orange-red #content-column .view-content input[type="submit"], #content-column .view-content .palette-orange-red input[type="submit"], .palette-orange-red form.commons-events-form-float input, form.commons-events-form-float .palette-orange-red input, .palette-orange-red form.commons-events-form-float input:hover, form.commons-events-form-float .palette-orange-red input:hover, .palette-orange-red .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-orange-red a {
+.palette-orange-red .button-alert, .palette-orange-red .commons-sign-up, .palette-orange-red .item-list-hybridauth-widget .ctools-modal-hybridauthmodal, .item-list-hybridauth-widget .palette-orange-red .ctools-modal-hybridauthmodal, .palette-orange-red .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-orange-red a, .palette-orange-red #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-orange-red .attachment-before > a, .palette-orange-red #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-orange-red a, .palette-orange-red #content-column .view-content input[type="submit"], #content-column .view-content .palette-orange-red input[type="submit"], .palette-orange-red form.commons-events-form-float input, form.commons-events-form-float .palette-orange-red input, .palette-orange-red .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-orange-red a {
   box-shadow: 1px 1px 1px #feb431 inset, 0 3px 3px rgba(0, 0, 0, 0.09);
   background-color: #feb431;
   *zoom: 1;
@@ -3853,7 +3861,7 @@ body.front.logged-in .view-commons-homepage-content .article.node.node-page .lin
   -moz-box-shadow: #a31b53 1px 0px 0px;
   box-shadow: #a31b53 1px 0px 0px;
 }
-.palette-magenta-blue .button-alert, .palette-magenta-blue .commons-sign-up, .palette-magenta-blue .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-magenta-blue a, .palette-magenta-blue #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-magenta-blue .attachment-before > a, .palette-magenta-blue #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-magenta-blue a, .palette-magenta-blue #content-column .view-content input[type="submit"], #content-column .view-content .palette-magenta-blue input[type="submit"], .palette-magenta-blue form.commons-events-form-float input, form.commons-events-form-float .palette-magenta-blue input, .palette-magenta-blue form.commons-events-form-float input:hover, form.commons-events-form-float .palette-magenta-blue input:hover, .palette-magenta-blue .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-magenta-blue a {
+.palette-magenta-blue .button-alert, .palette-magenta-blue .commons-sign-up, .palette-magenta-blue .item-list-hybridauth-widget .ctools-modal-hybridauthmodal, .item-list-hybridauth-widget .palette-magenta-blue .ctools-modal-hybridauthmodal, .palette-magenta-blue .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-magenta-blue a, .palette-magenta-blue #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-magenta-blue .attachment-before > a, .palette-magenta-blue #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-magenta-blue a, .palette-magenta-blue #content-column .view-content input[type="submit"], #content-column .view-content .palette-magenta-blue input[type="submit"], .palette-magenta-blue form.commons-events-form-float input, form.commons-events-form-float .palette-magenta-blue input, .palette-magenta-blue .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-magenta-blue a {
   box-shadow: 1px 1px 1px #69c5ec inset, 0 3px 3px rgba(0, 0, 0, 0.09);
   background-color: #69c5ec;
   *zoom: 1;
@@ -3952,7 +3960,7 @@ body.front.logged-in .view-commons-homepage-content .article.node.node-page .lin
   -moz-box-shadow: #1d8ecc 1px 0px 0px;
   box-shadow: #1d8ecc 1px 0px 0px;
 }
-.palette-blue-blue .button-alert, .palette-blue-blue .commons-sign-up, .palette-blue-blue .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-blue-blue a, .palette-blue-blue #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-blue-blue .attachment-before > a, .palette-blue-blue #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-blue-blue a, .palette-blue-blue #content-column .view-content input[type="submit"], #content-column .view-content .palette-blue-blue input[type="submit"], .palette-blue-blue form.commons-events-form-float input, form.commons-events-form-float .palette-blue-blue input, .palette-blue-blue form.commons-events-form-float input:hover, form.commons-events-form-float .palette-blue-blue input:hover, .palette-blue-blue .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-blue-blue a {
+.palette-blue-blue .button-alert, .palette-blue-blue .commons-sign-up, .palette-blue-blue .item-list-hybridauth-widget .ctools-modal-hybridauthmodal, .item-list-hybridauth-widget .palette-blue-blue .ctools-modal-hybridauthmodal, .palette-blue-blue .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-blue-blue a, .palette-blue-blue #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-blue-blue .attachment-before > a, .palette-blue-blue #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-blue-blue a, .palette-blue-blue #content-column .view-content input[type="submit"], #content-column .view-content .palette-blue-blue input[type="submit"], .palette-blue-blue form.commons-events-form-float input, form.commons-events-form-float .palette-blue-blue input, .palette-blue-blue .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-blue-blue a {
   box-shadow: 1px 1px 1px #7ebd26 inset, 0 3px 3px rgba(0, 0, 0, 0.09);
   background-color: #7ebd26;
   *zoom: 1;
@@ -4051,7 +4059,7 @@ body.front.logged-in .view-commons-homepage-content .article.node.node-page .lin
   -moz-box-shadow: #3b4549 1px 0px 0px;
   box-shadow: #3b4549 1px 0px 0px;
 }
-.palette-black-green .button-alert, .palette-black-green .commons-sign-up, .palette-black-green .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-black-green a, .palette-black-green #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-black-green .attachment-before > a, .palette-black-green #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-black-green a, .palette-black-green #content-column .view-content input[type="submit"], #content-column .view-content .palette-black-green input[type="submit"], .palette-black-green form.commons-events-form-float input, form.commons-events-form-float .palette-black-green input, .palette-black-green form.commons-events-form-float input:hover, form.commons-events-form-float .palette-black-green input:hover, .palette-black-green .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-black-green a {
+.palette-black-green .button-alert, .palette-black-green .commons-sign-up, .palette-black-green .item-list-hybridauth-widget .ctools-modal-hybridauthmodal, .item-list-hybridauth-widget .palette-black-green .ctools-modal-hybridauthmodal, .palette-black-green .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-black-green a, .palette-black-green #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-black-green .attachment-before > a, .palette-black-green #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-black-green a, .palette-black-green #content-column .view-content input[type="submit"], #content-column .view-content .palette-black-green input[type="submit"], .palette-black-green form.commons-events-form-float input, form.commons-events-form-float .palette-black-green input, .palette-black-green .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-black-green a {
   box-shadow: 1px 1px 1px #4090ba inset, 0 3px 3px rgba(0, 0, 0, 0.09);
   background-color: #4090ba;
   *zoom: 1;
@@ -4150,7 +4158,7 @@ body.front.logged-in .view-commons-homepage-content .article.node.node-page .lin
   -moz-box-shadow: #7e6046 1px 0px 0px;
   box-shadow: #7e6046 1px 0px 0px;
 }
-.palette-brown-yellow .button-alert, .palette-brown-yellow .commons-sign-up, .palette-brown-yellow .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-brown-yellow a, .palette-brown-yellow #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-brown-yellow .attachment-before > a, .palette-brown-yellow #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-brown-yellow a, .palette-brown-yellow #content-column .view-content input[type="submit"], #content-column .view-content .palette-brown-yellow input[type="submit"], .palette-brown-yellow form.commons-events-form-float input, form.commons-events-form-float .palette-brown-yellow input, .palette-brown-yellow form.commons-events-form-float input:hover, form.commons-events-form-float .palette-brown-yellow input:hover, .palette-brown-yellow .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-brown-yellow a {
+.palette-brown-yellow .button-alert, .palette-brown-yellow .commons-sign-up, .palette-brown-yellow .item-list-hybridauth-widget .ctools-modal-hybridauthmodal, .item-list-hybridauth-widget .palette-brown-yellow .ctools-modal-hybridauthmodal, .palette-brown-yellow .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-brown-yellow a, .palette-brown-yellow #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-brown-yellow .attachment-before > a, .palette-brown-yellow #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-brown-yellow a, .palette-brown-yellow #content-column .view-content input[type="submit"], #content-column .view-content .palette-brown-yellow input[type="submit"], .palette-brown-yellow form.commons-events-form-float input, form.commons-events-form-float .palette-brown-yellow input, .palette-brown-yellow .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-brown-yellow a {
   box-shadow: 1px 1px 1px #fcd036 inset, 0 3px 3px rgba(0, 0, 0, 0.09);
   background-color: #fcd036;
   *zoom: 1;
@@ -4249,7 +4257,7 @@ body.front.logged-in .view-commons-homepage-content .article.node.node-page .lin
   -moz-box-shadow: #759294 1px 0px 0px;
   box-shadow: #759294 1px 0px 0px;
 }
-.palette-seafoam-orange .button-alert, .palette-seafoam-orange .commons-sign-up, .palette-seafoam-orange .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-seafoam-orange a, .palette-seafoam-orange #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-seafoam-orange .attachment-before > a, .palette-seafoam-orange #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-seafoam-orange a, .palette-seafoam-orange #content-column .view-content input[type="submit"], #content-column .view-content .palette-seafoam-orange input[type="submit"], .palette-seafoam-orange form.commons-events-form-float input, form.commons-events-form-float .palette-seafoam-orange input, .palette-seafoam-orange form.commons-events-form-float input:hover, form.commons-events-form-float .palette-seafoam-orange input:hover, .palette-seafoam-orange .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-seafoam-orange a {
+.palette-seafoam-orange .button-alert, .palette-seafoam-orange .commons-sign-up, .palette-seafoam-orange .item-list-hybridauth-widget .ctools-modal-hybridauthmodal, .item-list-hybridauth-widget .palette-seafoam-orange .ctools-modal-hybridauthmodal, .palette-seafoam-orange .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-seafoam-orange a, .palette-seafoam-orange #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-seafoam-orange .attachment-before > a, .palette-seafoam-orange #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-seafoam-orange a, .palette-seafoam-orange #content-column .view-content input[type="submit"], #content-column .view-content .palette-seafoam-orange input[type="submit"], .palette-seafoam-orange form.commons-events-form-float input, form.commons-events-form-float .palette-seafoam-orange input, .palette-seafoam-orange .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-seafoam-orange a {
   box-shadow: 1px 1px 1px #d9a300 inset, 0 3px 3px rgba(0, 0, 0, 0.09);
   background-color: #d9a300;
   *zoom: 1;
@@ -4348,7 +4356,7 @@ body.front.logged-in .view-commons-homepage-content .article.node.node-page .lin
   -moz-box-shadow: #444444 1px 0px 0px;
   box-shadow: #444444 1px 0px 0px;
 }
-.palette-black-blue-yellow .button-alert, .palette-black-blue-yellow .commons-sign-up, .palette-black-blue-yellow .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-black-blue-yellow a, .palette-black-blue-yellow #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-black-blue-yellow .attachment-before > a, .palette-black-blue-yellow #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-black-blue-yellow a, .palette-black-blue-yellow #content-column .view-content input[type="submit"], #content-column .view-content .palette-black-blue-yellow input[type="submit"], .palette-black-blue-yellow form.commons-events-form-float input, form.commons-events-form-float .palette-black-blue-yellow input, .palette-black-blue-yellow form.commons-events-form-float input:hover, form.commons-events-form-float .palette-black-blue-yellow input:hover, .palette-black-blue-yellow .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-black-blue-yellow a {
+.palette-black-blue-yellow .button-alert, .palette-black-blue-yellow .commons-sign-up, .palette-black-blue-yellow .item-list-hybridauth-widget .ctools-modal-hybridauthmodal, .item-list-hybridauth-widget .palette-black-blue-yellow .ctools-modal-hybridauthmodal, .palette-black-blue-yellow .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-black-blue-yellow a, .palette-black-blue-yellow #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-black-blue-yellow .attachment-before > a, .palette-black-blue-yellow #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-black-blue-yellow a, .palette-black-blue-yellow #content-column .view-content input[type="submit"], #content-column .view-content .palette-black-blue-yellow input[type="submit"], .palette-black-blue-yellow form.commons-events-form-float input, form.commons-events-form-float .palette-black-blue-yellow input, .palette-black-blue-yellow .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-black-blue-yellow a {
   box-shadow: 1px 1px 1px #e5b700 inset, 0 3px 3px rgba(0, 0, 0, 0.09);
   background-color: #e5b700;
   *zoom: 1;
@@ -4447,7 +4455,7 @@ body.front.logged-in .view-commons-homepage-content .article.node.node-page .lin
   -moz-box-shadow: #573631 1px 0px 0px;
   box-shadow: #573631 1px 0px 0px;
 }
-.palette-brick-brick .button-alert, .palette-brick-brick .commons-sign-up, .palette-brick-brick .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-brick-brick a, .palette-brick-brick #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-brick-brick .attachment-before > a, .palette-brick-brick #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-brick-brick a, .palette-brick-brick #content-column .view-content input[type="submit"], #content-column .view-content .palette-brick-brick input[type="submit"], .palette-brick-brick form.commons-events-form-float input, form.commons-events-form-float .palette-brick-brick input, .palette-brick-brick form.commons-events-form-float input:hover, form.commons-events-form-float .palette-brick-brick input:hover, .palette-brick-brick .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-brick-brick a {
+.palette-brick-brick .button-alert, .palette-brick-brick .commons-sign-up, .palette-brick-brick .item-list-hybridauth-widget .ctools-modal-hybridauthmodal, .item-list-hybridauth-widget .palette-brick-brick .ctools-modal-hybridauthmodal, .palette-brick-brick .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-brick-brick a, .palette-brick-brick #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-brick-brick .attachment-before > a, .palette-brick-brick #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-brick-brick a, .palette-brick-brick #content-column .view-content input[type="submit"], #content-column .view-content .palette-brick-brick input[type="submit"], .palette-brick-brick form.commons-events-form-float input, form.commons-events-form-float .palette-brick-brick input, .palette-brick-brick .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-brick-brick a {
   box-shadow: 1px 1px 1px #c2594c inset, 0 3px 3px rgba(0, 0, 0, 0.09);
   background-color: #c2594c;
   *zoom: 1;
@@ -4546,7 +4554,7 @@ body.front.logged-in .view-commons-homepage-content .article.node.node-page .lin
   -moz-box-shadow: #959595 1px 0px 0px;
   box-shadow: #959595 1px 0px 0px;
 }
-.palette-gray-lightgray-blue .button-alert, .palette-gray-lightgray-blue .commons-sign-up, .palette-gray-lightgray-blue .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-gray-lightgray-blue a, .palette-gray-lightgray-blue #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-gray-lightgray-blue .attachment-before > a, .palette-gray-lightgray-blue #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-gray-lightgray-blue a, .palette-gray-lightgray-blue #content-column .view-content input[type="submit"], #content-column .view-content .palette-gray-lightgray-blue input[type="submit"], .palette-gray-lightgray-blue form.commons-events-form-float input, form.commons-events-form-float .palette-gray-lightgray-blue input, .palette-gray-lightgray-blue form.commons-events-form-float input:hover, form.commons-events-form-float .palette-gray-lightgray-blue input:hover, .palette-gray-lightgray-blue .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-gray-lightgray-blue a {
+.palette-gray-lightgray-blue .button-alert, .palette-gray-lightgray-blue .commons-sign-up, .palette-gray-lightgray-blue .item-list-hybridauth-widget .ctools-modal-hybridauthmodal, .item-list-hybridauth-widget .palette-gray-lightgray-blue .ctools-modal-hybridauthmodal, .palette-gray-lightgray-blue .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-gray-lightgray-blue a, .palette-gray-lightgray-blue #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-gray-lightgray-blue .attachment-before > a, .palette-gray-lightgray-blue #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-gray-lightgray-blue a, .palette-gray-lightgray-blue #content-column .view-content input[type="submit"], #content-column .view-content .palette-gray-lightgray-blue input[type="submit"], .palette-gray-lightgray-blue form.commons-events-form-float input, form.commons-events-form-float .palette-gray-lightgray-blue input, .palette-gray-lightgray-blue .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-gray-lightgray-blue a {
   box-shadow: 1px 1px 1px #00ccff inset, 0 3px 3px rgba(0, 0, 0, 0.09);
   background-color: #00ccff;
   *zoom: 1;
@@ -4645,7 +4653,7 @@ body.front.logged-in .view-commons-homepage-content .article.node.node-page .lin
   -moz-box-shadow: #353535 1px 0px 0px;
   box-shadow: #353535 1px 0px 0px;
 }
-.palette-black-white-red .button-alert, .palette-black-white-red .commons-sign-up, .palette-black-white-red .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-black-white-red a, .palette-black-white-red #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-black-white-red .attachment-before > a, .palette-black-white-red #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-black-white-red a, .palette-black-white-red #content-column .view-content input[type="submit"], #content-column .view-content .palette-black-white-red input[type="submit"], .palette-black-white-red form.commons-events-form-float input, form.commons-events-form-float .palette-black-white-red input, .palette-black-white-red form.commons-events-form-float input:hover, form.commons-events-form-float .palette-black-white-red input:hover, .palette-black-white-red .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-black-white-red a {
+.palette-black-white-red .button-alert, .palette-black-white-red .commons-sign-up, .palette-black-white-red .item-list-hybridauth-widget .ctools-modal-hybridauthmodal, .item-list-hybridauth-widget .palette-black-white-red .ctools-modal-hybridauthmodal, .palette-black-white-red .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-black-white-red a, .palette-black-white-red #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-black-white-red .attachment-before > a, .palette-black-white-red #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-black-white-red a, .palette-black-white-red #content-column .view-content input[type="submit"], #content-column .view-content .palette-black-white-red input[type="submit"], .palette-black-white-red form.commons-events-form-float input, form.commons-events-form-float .palette-black-white-red input, .palette-black-white-red .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-black-white-red a {
   box-shadow: 1px 1px 1px #e45553 inset, 0 3px 3px rgba(0, 0, 0, 0.09);
   background-color: #e45553;
   *zoom: 1;
@@ -4660,6 +4668,105 @@ body.front.logged-in .view-commons-homepage-content .article.node.node-page .lin
 }
 .palette-black-white-red .selectBox-dropdown {
   color: #383838;
+}
+
+.palette-swaraj-orange-green h2 {
+  color: #f17e00;
+}
+.palette-swaraj-orange-green .header-color-row-one {
+  background-color: #f17e00;
+  border-top: 4px solid black;
+}
+.boxshadow .palette-swaraj-orange-green .header-color-row-one {
+  -webkit-box-shadow: #f17e00 0px -1px 0px;
+  -moz-box-shadow: #f17e00 0px -1px 0px;
+  box-shadow: #f17e00 0px -1px 0px;
+  margin-top: 1px;
+}
+.palette-swaraj-orange-green .header-color-row-two {
+  background-color: #3a690a;
+  border-top: 1px solid #54980e;
+  border-bottom: 1px solid #203a06;
+}
+.palette-swaraj-orange-green h1.node-title {
+  color: #3a690a;
+}
+.palette-swaraj-orange-green h1.node-title a {
+  color: #3a690a;
+}
+.palette-swaraj-orange-green a, .palette-swaraj-orange-green .commons-bw-create-all-widget-types li a {
+  color: #3a690a;
+}
+.palette-swaraj-orange-green #menu-bar.nav ul.menu li:hover .arrow:before,
+.palette-swaraj-orange-green #menu-bar.nav ul.menu li.active-trail .arrow:before {
+  border-color: transparent transparent #54980e transparent;
+}
+.palette-swaraj-orange-green #menu-bar.nav ul.menu li:hover .arrow:after,
+.palette-swaraj-orange-green #menu-bar.nav ul.menu li.active-trail .arrow:after {
+  border-color: transparent transparent #3a690a transparent;
+}
+.palette-swaraj-orange-green ul.commons-utility-links li.last {
+  border-left-color: #3a690a;
+}
+.palette-swaraj-orange-green .quicktabs-style-commons-pills ul.quicktabs-tabs li a,
+.palette-swaraj-orange-green .quicktabs-style-commons-pills ul.quicktabs-tabs li a span,
+.palette-swaraj-orange-green ul.primary.tabs li a,
+.palette-swaraj-orange-green ul.primary.tabs li a span {
+  color: #3a690a;
+}
+.palette-swaraj-orange-green .quicktabs-style-commons-pills ul.quicktabs-tabs li a:hover,
+.palette-swaraj-orange-green ul.primary.tabs li a:hover {
+  color: #203a06;
+}
+.palette-swaraj-orange-green .quicktabs-style-commons-pills ul.quicktabs-tabs li.active a,
+.palette-swaraj-orange-green .quicktabs-style-commons-pills ul.quicktabs-tabs li.active a span,
+.palette-swaraj-orange-green ul.primary.tabs li.active a,
+.palette-swaraj-orange-green ul.primary.tabs li.active a span {
+  color: #333333;
+}
+.palette-swaraj-orange-green .block-search {
+  background-color: #1b3105;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF1B3105', endColorstr='#FF2B4D07');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1b3105), color-stop(100%, #2b4d07));
+  background-image: -webkit-linear-gradient(top, #1b3105 0%, #2b4d07 100%);
+  background-image: -moz-linear-gradient(top, #1b3105 0%, #2b4d07 100%);
+  background-image: -o-linear-gradient(top, #1b3105 0%, #2b4d07 100%);
+  background-image: linear-gradient(top, #1b3105 0%, #2b4d07 100%);
+}
+.palette-swaraj-orange-green .commons-bw-create-all-widget-types, .palette-swaraj-orange-green li.sharethis .sharethis-wrapper {
+  border-color: #3a690a;
+}
+.palette-swaraj-orange-green li.sharethis .sharethis-wrapper:before {
+  border-color: #3a690a transparent transparent transparent;
+}
+.palette-swaraj-orange-green #menu-bar.nav ul.menu li a, #menu-bar.nav ul.menu li .palette-swaraj-orange-green a {
+  border-left: 1px solid #ff8d11;
+  -webkit-box-shadow: #af5b00 -1px 0px 0px;
+  -moz-box-shadow: #af5b00 -1px 0px 0px;
+  box-shadow: #af5b00 -1px 0px 0px;
+}
+.palette-swaraj-orange-green #menu-bar.nav {
+  border-right: 1px solid #af5b00;
+  -webkit-box-shadow: #ff8d11 1px 0px 0px;
+  -moz-box-shadow: #ff8d11 1px 0px 0px;
+  box-shadow: #ff8d11 1px 0px 0px;
+}
+.palette-swaraj-orange-green .button-alert, .palette-swaraj-orange-green .commons-sign-up, .palette-swaraj-orange-green .item-list-hybridauth-widget .ctools-modal-hybridauthmodal, .item-list-hybridauth-widget .palette-swaraj-orange-green .ctools-modal-hybridauthmodal, .palette-swaraj-orange-green .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-swaraj-orange-green a, .palette-swaraj-orange-green #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-swaraj-orange-green .attachment-before > a, .palette-swaraj-orange-green #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-swaraj-orange-green a, .palette-swaraj-orange-green #content-column .view-content input[type="submit"], #content-column .view-content .palette-swaraj-orange-green input[type="submit"], .palette-swaraj-orange-green form.commons-events-form-float input, form.commons-events-form-float .palette-swaraj-orange-green input, .palette-swaraj-orange-green .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-swaraj-orange-green a {
+  box-shadow: 1px 1px 1px #1c8b29 inset, 0 3px 3px rgba(0, 0, 0, 0.09);
+  background-color: #1c8b29;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF1C8B29', endColorstr='#FF1C8B29');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1c8b29), color-stop(100%, #1c8b29));
+  background-image: -webkit-linear-gradient(top, #1c8b29 0%, #1c8b29 100%);
+  background-image: -moz-linear-gradient(top, #1c8b29 0%, #1c8b29 100%);
+  background-image: -o-linear-gradient(top, #1c8b29 0%, #1c8b29 100%);
+  background-image: linear-gradient(top, #1c8b29 0%, #1c8b29 100%);
+  border: 1px solid #1c8b29;
+  color: white;
+}
+.palette-swaraj-orange-green .selectBox-dropdown {
+  color: #3a690a;
 }
 
 .palette-brown-burnt-orange h2 {
@@ -4744,7 +4851,7 @@ body.front.logged-in .view-commons-homepage-content .article.node.node-page .lin
   -moz-box-shadow: #7d4912 1px 0px 0px;
   box-shadow: #7d4912 1px 0px 0px;
 }
-.palette-brown-burnt-orange .button-alert, .palette-brown-burnt-orange .commons-sign-up, .palette-brown-burnt-orange .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-brown-burnt-orange a, .palette-brown-burnt-orange #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-brown-burnt-orange .attachment-before > a, .palette-brown-burnt-orange #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-brown-burnt-orange a, .palette-brown-burnt-orange #content-column .view-content input[type="submit"], #content-column .view-content .palette-brown-burnt-orange input[type="submit"], .palette-brown-burnt-orange form.commons-events-form-float input, form.commons-events-form-float .palette-brown-burnt-orange input, .palette-brown-burnt-orange form.commons-events-form-float input:hover, form.commons-events-form-float .palette-brown-burnt-orange input:hover, .palette-brown-burnt-orange .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-brown-burnt-orange a {
+.palette-brown-burnt-orange .button-alert, .palette-brown-burnt-orange .commons-sign-up, .palette-brown-burnt-orange .item-list-hybridauth-widget .ctools-modal-hybridauthmodal, .item-list-hybridauth-widget .palette-brown-burnt-orange .ctools-modal-hybridauthmodal, .palette-brown-burnt-orange .pane-commons-groups-commons-groups-create-group a, .pane-commons-groups-commons-groups-create-group .palette-brown-burnt-orange a, .palette-brown-burnt-orange #quicktabs-container-commons_bw .quicktabs-tabpage .attachment-before > a, #quicktabs-container-commons_bw .quicktabs-tabpage .palette-brown-burnt-orange .attachment-before > a, .palette-brown-burnt-orange #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add a, #quicktabs-container-commons_bw .quicktabs-tabpage .comment-add .palette-brown-burnt-orange a, .palette-brown-burnt-orange #content-column .view-content input[type="submit"], #content-column .view-content .palette-brown-burnt-orange input[type="submit"], .palette-brown-burnt-orange form.commons-events-form-float input, form.commons-events-form-float .palette-brown-burnt-orange input, .palette-brown-burnt-orange .pane-commons-events-commons-events-create-event-link a, .pane-commons-events-commons-events-create-event-link .palette-brown-burnt-orange a {
   box-shadow: 1px 1px 1px #eb9039 inset, 0 3px 3px rgba(0, 0, 0, 0.09);
   background-color: #eb9039;
   *zoom: 1;
