@@ -1,0 +1,12 @@
+name = feature show node
+description = This feature contain a view which show node with publish/unpublish exposed
+core = 7.x
+package = Features
+php = 5.2.4
+version = 7.x-1.0
+project = feature_show_node
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[views_view][] = show_manifesto_node
+features_exclude[dependencies][ctools] = ctools
