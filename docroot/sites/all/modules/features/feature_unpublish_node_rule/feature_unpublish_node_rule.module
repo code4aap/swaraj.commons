@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature unpublish node rule feature.
+ */
+
+include_once 'feature_unpublish_node_rule.features.inc';
