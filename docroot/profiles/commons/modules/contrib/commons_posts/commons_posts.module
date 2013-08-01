@@ -60,7 +60,7 @@ function commons_posts_views_pre_render(&$view) {
   if ($view->name == 'commons_bw_posts') {
     $group_id = $view->args[0];
     if (og_user_access('node', $group_id, 'create post content')) {
-      $view->attachment_before = l(t('Create a post'), 'node/add/post', array('query' => array('og_group_ref' => $group_id)));
+      $view->attachment_before = l(t('Create a manifesto item'), 'node/add/post', array('query' => array('og_group_ref' => $group_id)));
     }
   }
 }
