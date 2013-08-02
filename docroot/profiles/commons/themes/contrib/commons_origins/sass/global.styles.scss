@@ -3215,7 +3215,6 @@ body.front {
   font-weight: bold;
 }
 
-body.front.logged-in {
   .view-commons-homepage-content {
     > .view-content {
       @extend %pod;
@@ -3270,9 +3269,8 @@ body.front.logged-in {
       }
     }
   }
-}
 
-body.front.logged-in .view-commons-homepage-content .article.node {
+.view-commons-homepage-content .article.node {
   &.no-user-picture,
   &.node-page {
     .node-header,
