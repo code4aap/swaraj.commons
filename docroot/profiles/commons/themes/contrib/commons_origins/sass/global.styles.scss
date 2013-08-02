@@ -3572,6 +3572,25 @@ body.front.logged-in .view-commons-homepage-content .article.node {
 	padding:2px 10px 2px 10px;
 }
 
+/**
+@AUTHOR Akash jain
+change manifesto item font size and set image
+**/
+
+body .type-manifesto-item {
+  font-size: 12px;
+}
+body .type-manifesto-item:before {
+  content: "";
+  background: url('../images/icons/posts.png?1374039101') 0px 0px no-repeat;
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 3px;
+  position: relative;
+  top: 1px;
+  margin-right: 6px;
+}
 
 /**
  * Add the color palettes
