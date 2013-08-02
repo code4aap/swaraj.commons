@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * f_url_alias_pattern.features.taxonomy.inc
+ * commons_groups.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function f_url_alias_pattern_taxonomy_default_vocabularies() {
+function commons_groups_taxonomy_default_vocabularies() {
   return array(
     'target_election' => array(
       'name' => 'Target Election',

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /**
  * @file
@@ -9,21 +9,23 @@
  * @Author Kuldeep Singh Pal [TKuldeep]
  * implements hook_form_alter
  */
-
 function alter_hybridauth_form_alter(&$form, &$form_state, $form_id) {
-
-  // hide the user register fields
-  if ($form_id == 'user_register_form') {
-    unset($form['field_name_first']);
-    unset($form['field_name_last']);
-    unset($form['account']['mail']);
-    unset($form['actions']['submit']);
-  }
-  if ($form_id == 'user_login') {
-    $form['login_msg'] = array(
-      '#markup' =>t('<b>Or login using your email address and password</b>'),
-      '#weight' => -40,
-    );
-  }
+	
+	// hide the user register fields
+	if ($form_id == 'user_register_form') {
+		global $user;
+		if (! in_array ( 'administrator', $user->roles )) {
+			unset ( $form ['field_name_first'] );
+			unset ( $form ['field_name_last'] );
+			unset ( $form ['account'] ['mail'] );
+			unset ( $form ['actions'] ['submit'] );
+		}
+	}
+	if ($form_id == 'user_login') {
+		$form ['login_msg'] = array (
+				'#markup' => t ( '<b>Or login using your email address and password</b>' ),
+				'#weight' => - 40 
+		);
+	}
 }
 
