@@ -14,10 +14,14 @@ function alter_hybridauth_form_alter(&$form, &$form_state, $form_id) {
 
   // hide the user register fields
   if ($form_id == 'user_register_form') {
-    unset($form['field_name_first']);
-    unset($form['field_name_last']);
-    unset($form['account']['mail']);
-    unset($form['actions']['submit']);
+    // Unset user registration related fields unless user has permission to Administer Users.
+    global $user;
+    if (!user_access("administer users")) {
+      unset($form['field_name_first']);
+      unset($form['field_name_last']);
+      unset($form['account']['mail']);
+      unset($form['actions']['submit']);
+    }
   }
   if ($form_id == 'user_login') {
     $form['login_msg'] = array(
