@@ -2211,14 +2211,18 @@ body.page-node .pane-views-panes h2 {
   top: 1px;
   margin-right: 6px;
 }
-.view-commons-radioactivity-groups-most-active .type-Post,
+.view-commons-radioactivity-groups-most-active .type-Post, .view-commons-radioactivity-groups-most-active .type-Manifesto-Item,
 .view-commons-groups-recent-content .type-Post,
-.view-commons-radioactivity-groups-active-in-group .type-Post {
+.view-commons-groups-recent-content .type-Manifesto-Item,
+.view-commons-radioactivity-groups-active-in-group .type-Post,
+.view-commons-radioactivity-groups-active-in-group .type-Manifesto-Item {
   font-size: 12px;
 }
-.view-commons-radioactivity-groups-most-active .type-Post:before,
+.view-commons-radioactivity-groups-most-active .type-Post:before, .view-commons-radioactivity-groups-most-active .type-Manifesto-Item:before,
 .view-commons-groups-recent-content .type-Post:before,
-.view-commons-radioactivity-groups-active-in-group .type-Post:before {
+.view-commons-groups-recent-content .type-Manifesto-Item:before,
+.view-commons-radioactivity-groups-active-in-group .type-Post:before,
+.view-commons-radioactivity-groups-active-in-group .type-Manifesto-Item:before {
   content: "";
   background: url('../images/icons-sfe4ef5da84.png') 0 -1009px no-repeat;
   width: 11px;
