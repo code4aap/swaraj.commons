@@ -27,7 +27,7 @@ function commons_profile_social_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 6,
+        'weight' => '6',
       ),
     ),
     'entity_type' => 'user',
@@ -74,11 +74,10 @@ function commons_profile_social_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'link',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'link_default',
-        'weight' => 5,
+        'type' => 'hidden',
+        'weight' => '5',
       ),
     ),
     'entity_type' => 'user',
@@ -126,11 +125,10 @@ function commons_profile_social_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'link',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'link_default',
-        'weight' => 7,
+        'type' => 'hidden',
+        'weight' => '7',
       ),
     ),
     'entity_type' => 'user',
