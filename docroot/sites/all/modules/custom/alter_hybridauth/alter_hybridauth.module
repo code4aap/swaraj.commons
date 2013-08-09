@@ -12,6 +12,12 @@
 
 function alter_hybridauth_form_alter(&$form, &$form_state, $form_id) {
 
+  // hide some field from user edit page 
+  if($form_id == "edit_profile_user_profile_form") {
+    unset($form['field_twitter_url']);
+    unset($form['field_linkedin_url']);
+  }
+
   // hide the user register fields
   if ($form_id == 'user_register_form') {
     // Unset user registration related fields unless user has permission to Administer Users.
