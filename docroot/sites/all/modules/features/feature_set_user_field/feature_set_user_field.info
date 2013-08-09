@@ -1,0 +1,11 @@
+name = feature_set_user_field
+description = This feature used to set facebook link, first name and last name automatically when user register with social login
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = feature_set_user_field
+dependencies[] = entity
+dependencies[] = hybridauth
+dependencies[] = rules
+features[features_api][] = api:1
+features[rules_config][] = rules_set_facebook_link_field
